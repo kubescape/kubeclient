@@ -15,4 +15,4 @@ from .service_api import Service  # noqa: F401
 # from .persistent_volume_api import PersistentVolume
 # from .job_api import Job
 # from .cron_job_api import CronJob
-from .stateful_set_api import StatefulSet  # noqa: F401
+from .statefulset_api import StatefulSet  # noqa: F401
