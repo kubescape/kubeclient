@@ -1,6 +1,7 @@
 # kubeclient
 
 This is a wrapper around the k8s python client that provides a more pythonic interface to the k8s api.
+The goal is to make it easier to write tests for k8s resources. It is not intended to be a full replacement for the k8s python client.
 _This is a work in progress and is not ready for production use yet 🏗️._
 
 # Usage
