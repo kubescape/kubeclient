@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: host-mount-pod
+spec:
+  containers:
+    - name: my-container
+      image: alpine:latest
+      command: ["sleep", "infinity"] # Keep the container running
+      volumeMounts:
+        - name: tmp-volume
+          mountPath: /host
+  volumes:
+    - name: tmp-volume
+      hostPath:
+        path: /tmp
+        type: Directory
